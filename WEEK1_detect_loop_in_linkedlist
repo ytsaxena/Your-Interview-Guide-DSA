@@ -1,0 +1,66 @@
+package Linkedlist;
+
+
+class MyNode {
+    int data;
+    MyNode next;
+
+    MyNode(int newData) {
+        this.data = newData;
+        this.next = null;
+    }
+
+
+}
+
+public class DetectLoop {
+
+    public static void main(String[] args) {
+
+        // Create a hard-coded linked list:
+        // 10 -> 20 -> 30 -> 40 -> 50 -> 60
+        MyNode head = new MyNode(10);
+        head.next = new MyNode(20);
+        head.next.next = new MyNode(30);
+        head.next.next.next = new MyNode(40);
+        head.next.next.next.next = new MyNode(50);
+        head.next.next.next.next.next = new MyNode(60);
+
+// Creating a loop resulting in the linked list:
+        // 10 -> 20 -> 30 -> 40 -> 10 -> 20 -> 30 ...
+
+        head.next.next.next.next = head;
+
+        if (fundetectloop(head)) {
+            System.out.println("Loop Found");
+        } else {
+            System.out.println("No Loop Found");
+        }
+
+
+    }
+
+    static boolean fundetectloop(MyNode head) {
+
+        MyNode slow_p = head;
+        MyNode fast_p = head;
+
+        // Loop that runs while fast and slow pointer are
+        // not null and not equal
+
+        while (slow_p != null && fast_p != null && fast_p.next != null) {
+           slow_p =  slow_p.next;
+           fast_p =  fast_p.next.next;
+
+
+            // If fast and slow pointer points to the same node, then the cycle is detected
+            if (slow_p == fast_p) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+}
