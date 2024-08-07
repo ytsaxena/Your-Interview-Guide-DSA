@@ -1,0 +1,39 @@
+public class BuyandSellStock {
+
+    public static void main(String[] args) {
+
+
+        int prices[] ={7,1,5,6,4};
+        int n =prices.length;
+        int max_profit = maxprofit(prices,n);
+
+        System.out.println("profit = "+ max_profit);
+
+    }
+
+
+    static int maxprofit(int prices[] ,int size)
+    {
+        int buy =prices[0];
+        int profit =0;
+
+        for (int i =1;i< size;i++)
+        {
+            //checking for lower buy value
+            if (buy>prices[i])
+            {
+                buy=prices[i];
+            } else if (prices[i]-buy>profit) {
+                profit= prices[i]-buy;
+
+                
+            }
+
+
+
+        }
+
+        return profit;
+
+    }
+}
