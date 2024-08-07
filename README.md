@@ -34,6 +34,8 @@ The product of any prefix or suffix of nums is guaranteed to fit in a32-bit inte
 You must write an algorithm that runs in O(n) time and withoutusing the division operation.
 Input: nums = [1,2,3,4]
 Output: [24,12,8,6]
+
+
 Q.2. Contains Duplicate
 Given an integer array nums, return true if any value appears atleast twice in the array, and return false if every element indistinct.
 Input: nums = [1,2,3,1]
