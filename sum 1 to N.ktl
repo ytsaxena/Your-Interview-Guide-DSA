@@ -1,0 +1,18 @@
+
+
+fun main(){
+
+
+var num =5
+var sum =0;
+
+for( i in 1..num)
+{
+    sum =sum+i;
+}
+
+println("sum = $sum")
+    
+    
+    
+}
