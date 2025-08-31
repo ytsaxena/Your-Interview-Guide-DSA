@@ -1,0 +1,13 @@
+fun main() {
+    val inputA = readLine()?.toInt()
+    val inputB = readLine()?.toFloat()
+    val inputC = readLine()?.toLong()
+    val inputD = readLine()?.toByte()
+    val inputS = readLine()  
+
+    println("Int: $inputA")
+    println("Float: $inputB")
+    println("Long: $inputC")
+    println("Byte: $inputD")
+    println("String: $inputS")
+}
