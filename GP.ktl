@@ -1,0 +1,26 @@
+
+
+// Given the first 2 terms a and b of a Geometric Series. The task is to find the nth term of the series.
+// Gp n th term formula
+
+// find common diff       r = b/a 
+// find nth term          a * r ^ (n-1)
+
+
+fun main(){
+  
+    var a = 10 
+  var b = 2
+  var n =5
+  
+  
+  val r = b.toDouble() / a.toDouble() 
+  
+    val term = a * Math.pow(r, (n - 1).toDouble())
+  println(term)
+  
+}
+
+ 
+
+    

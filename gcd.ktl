@@ -1,0 +1,34 @@
+//gcd meand hcf 
+
+fun main(){
+
+var a = 10
+var b = 15
+
+
+var min = if(a<b) a else b
+
+  
+  for(i in min downTo 1)
+  {
+    
+    if(a%i==0 && b%i==0)
+    {
+      println(i)
+      break
+    }
+    
+    
+    
+  }
+    
+    
+  
+  
+}
+
+
+
+
+
+  

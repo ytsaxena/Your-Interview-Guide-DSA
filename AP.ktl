@@ -1,0 +1,18 @@
+
+
+ // Given three integers a, d and n. Where a is the first term, d is the common difference of an A.P.  Calculate the nth term of A.P. 
+// The nth term is given by an = a + (n-1)d
+
+fun main(){
+  
+    var a = 10 
+  var d = 2
+  var n =5
+  var ap = a +(n-1)*d    // 10 + (5-1)*2  ==18
+  println(ap)
+  
+}
+
+ 
+
+    

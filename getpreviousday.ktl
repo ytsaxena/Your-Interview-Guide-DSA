@@ -1,0 +1,11 @@
+fun getPreviousDay(d: Int, n: Int): String {
+    val days = listOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+    val index = (d - n + 7) % 7
+    return days[index]
+}
+
+fun main() {
+    val d = 5  // Friday
+    val n = 8  // 8 days before
+    println("Day after going back $n days: ${getPreviousDay(d, n)}")
+}

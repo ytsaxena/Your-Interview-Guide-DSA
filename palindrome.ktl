@@ -1,0 +1,30 @@
+fun main(){
+  
+  var name ="nidfsdftin"
+  
+  var startindex = 0
+  var lastindex = name.length-1
+  
+  
+  while(startindex<lastindex)
+  {
+  
+    startindex++
+    lastindex--
+    
+    
+    if(name[startindex]!=name[lastindex])
+    {
+      return  println("not palindrome") 
+    }
+    
+    
+  }
+   println("palindrome") 
+  
+
+  
+  
+  
+  
+}

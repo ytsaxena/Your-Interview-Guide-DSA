@@ -1,0 +1,22 @@
+fun main(){
+  
+  var name ="nidfsdftin"
+  
+  var revstring =""
+  
+  
+  for (i in name.length-1 downTo 0)
+  {
+    
+    revstring = revstring + name[i]
+    
+  }
+  
+  println(revstring)
+  
+
+  
+  
+  
+  
+}

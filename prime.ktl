@@ -1,0 +1,39 @@
+fun main(){
+  
+  
+  var n = 12
+  
+  
+ if (n <= 1) {
+        println("not prime")
+        return
+    }
+    
+  // for(i in 2 until n)
+  // {
+    
+  //   if(n%i==0)
+  //   {
+  //     println("not prime")
+  //     return
+  //   }
+    
+  // }
+  
+  //more optimize
+    for(i in 2..Math.sqrt(n.toDouble()).toInt())
+  {
+    
+    if(n%i==0)
+    {
+      println("not prime")
+      return
+    }
+    
+  }
+  
+  println("prime")
+  
+  
+  
+}
