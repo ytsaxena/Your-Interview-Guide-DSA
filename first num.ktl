@@ -1,0 +1,26 @@
+fun main(){
+
+//find first num
+
+
+var n = 1738
+var fn =0
+
+
+while(n!=0)
+{
+  fn = n%10  //8 3 7 1
+   
+  n=n/10   //173  17  1 0
+  
+  
+}
+
+println(fn)
+
+
+
+  
+  
+  
+}

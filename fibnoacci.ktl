@@ -1,0 +1,24 @@
+fun main(){
+  //1 1 2 3 5
+  
+  var n = 5
+  var a=1
+  var b = 1
+  var c =0
+  
+  print("$a  $b ")
+  for(i in 1..n)
+  {
+    
+    c= a+b
+    print("$c ")
+    
+    a = b
+    b = c
+    
+  }
+  
+  
+  
+  
+}
